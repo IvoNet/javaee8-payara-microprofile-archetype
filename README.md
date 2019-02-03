@@ -1,4 +1,4 @@
-# Minimalistic Java EE 8 Quickstarter
+# Java EE 8 Quickstarter archetype
 
 A quickstart maven archetype for creating greenfield Java EE 8 projects
 working with Payara 5 and MicroProfile 2.1.
