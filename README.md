@@ -31,3 +31,14 @@ mvn archetype:generate -Dfilter=nl.ivonet:
 ```
 
 this will filter the archetype list on my groupId
+
+## Create your own project
+
+```bash
+mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee8-payara-microprofile-archetype -DarchetypeVersion=0.0.1 -DgroupId=nl.ivonet -DartifactId=[PROJECT_NAME] -Ddocker-hub-name=[YOUR_DOCKER_HUB_NAME] -Dversion=1.0-SNAPSHOT -Darchetype.interactive=false --batch-mode
+```
+e.g.
+
+```bash
+mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee8-payara-microprofile-archetype -DarchetypeVersion=0.0.1 -DgroupId=nl.ivonet -DartifactId=helloworld -Ddocker-hub-name=ivonet -Dversion=1.0-SNAPSHOT -Darchetype.interactive=false --batch-mode
+```
