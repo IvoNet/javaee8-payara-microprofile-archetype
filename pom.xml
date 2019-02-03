@@ -7,15 +7,15 @@
     </parent>
     <groupId>nl.ivonet</groupId>
     <artifactId>javaee8-payara-microprofile-archetype</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>javaee8-payara-microprofile-archetype</name>
-    <description>Java EE 8 project minimalistic quickstart template.</description>
+    <description>Java EE 8 / Payara 5 / Microprofile 2 - project minimalistic quickstart template.</description>
     <url>https://www.ivonet.nl</url>
     <organization>
         <name>Ivo Woltring</name>
         <url>https://www.ivonet.nl</url>
     </organization>
-    <inceptionYear>2018</inceptionYear>
+    <inceptionYear>2019</inceptionYear>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>

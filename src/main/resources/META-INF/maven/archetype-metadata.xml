@@ -52,7 +52,6 @@
             <includes>
                 <include>README.md</include>
                 <include>Dockerfile</include>
-                <include>Dockerfile.payara</include>
                 <include>buildAndRun.sh</include>
                 <include>buildAndDeploy.sh</include>
                 <include>logs.sh</include>

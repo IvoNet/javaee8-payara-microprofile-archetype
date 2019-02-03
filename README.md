@@ -8,8 +8,8 @@ A quickstart maven archetype for creating greenfield Java EE 8 projects
 ```bash
 mvn dependency:get \
    -DgroupId=nl.ivonet \
-   -DartifactId=javaee8-essentials-archetype \
-   -Dversion=0.0.3
+   -DartifactId=javaee8-payara-microprofile-archetype \
+   -Dversion=0.0.1
    
 mvn archetype:crawl
    
@@ -20,8 +20,8 @@ mvn archetype:crawl
 ```bash
 mvn archetype:generate \
     -DarchetypeGroupId=nl.ivonet \
-    -DarchetypeArtifactId=javaee8-essentials-archetype \
-    -DarchetypeVersion=0.0.3 -U
+    -DarchetypeArtifactId=javaee8-payara-microprofile-archetype \
+    -DarchetypeVersion=0.0.1 -U
 ```
 
 ## Run if offline available

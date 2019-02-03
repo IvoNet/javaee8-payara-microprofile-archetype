@@ -12,15 +12,15 @@ if [ $? -eq 1 ] || [ "$RUNNING" == "false" ]; then
      --rm \
      --name ${artifactId} \
      -p 8080:8080 \
-     -p 9990:9990 \
-     -v "$(pwd)/artifact:/deployments" \
-     ivonet/wildfly:15.0.1.Final
-#     ivonet/payara:5.184
+     -p 8181:8181 \
+     -p 4848:4848 \
+     -v "$(pwd)/artifact:/autodeploy" \
+     ivonet/payara:5.184
 
-    echo "WildFly admin console credentials:"
-    echo "Url: http://localhost:9990"
+    echo "Payara 5 admin console credentials:"
+    echo "Url: https://localhost:4848"
     echo "Usr: admin"
-    echo "Pwd: s3cr3t"
+    echo "Pwd: secret"
 
     mvn clean package
 else
