@@ -3,6 +3,14 @@
 A quickstart maven archetype for creating greenfield Java EE 8 projects
 working with Payara 5 and MicroProfile 2.1.
 
+## Create Java EE 8 Project from mvn central repo
+
+```bash
+mvn archetype:generate \
+    -DarchetypeGroupId=nl.ivonet \
+    -DarchetypeArtifactId=javaee8-payara-microprofile-archetype \
+    -DarchetypeVersion=0.0.1 -U
+```
 
 ## Install in local repo
 
@@ -14,15 +22,6 @@ mvn dependency:get \
    
 mvn archetype:crawl
    
-```
-
-## Run from mvn central repo
-
-```bash
-mvn archetype:generate \
-    -DarchetypeGroupId=nl.ivonet \
-    -DarchetypeArtifactId=javaee8-payara-microprofile-archetype \
-    -DarchetypeVersion=0.0.1 -U
 ```
 
 ## Run if offline available
@@ -43,3 +42,8 @@ e.g.
 ```bash
 mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee8-payara-microprofile-archetype -DarchetypeVersion=0.0.1 -DgroupId=nl.ivonet -DartifactId=helloworld -Ddocker-hub-name=ivonet -Dversion=1.0-SNAPSHOT -Darchetype.interactive=false --batch-mode
 ```
+
+
+# Contact
+
+Twitter: @ivonet
