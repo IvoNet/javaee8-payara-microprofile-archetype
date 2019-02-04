@@ -17,12 +17,12 @@ if [ $? -eq 1 ] || [ "$RUNNING" == "false" ]; then
      -v "$(pwd)/artifact:/autodeploy" \
      ivonet/payara:5.184
 
+    mvn clean package
+
     echo "Payara 5 admin console credentials:"
     echo "Url: https://localhost:4848"
     echo "Usr: admin"
     echo "Pwd: secret"
-
-    mvn clean package
 else
     /usr/bin/osascript -e 'display notification "Stopping..." with title "${artifactId}"'
     docker rm -f ${artifactId}
