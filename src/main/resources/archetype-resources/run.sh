@@ -5,7 +5,7 @@
 
 RUNNING=$(docker inspect --format="{{ .State.Running }}" ${artifactId} 2> /dev/null)
 if [ $? -eq 1 ] || [ "$RUNNING" == "false" ]; then
-    rm -rfv ./artifact/*.war
+    rm -rfv ./artifact/*.war 2>/dev/null
 
     docker run \
      -d \
