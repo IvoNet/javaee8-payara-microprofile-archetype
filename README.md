@@ -3,6 +3,8 @@
 A quickstart maven archetype for creating greenfield Java EE 8 projects
 working with Payara 5 and MicroProfile 2.1.
 
+You can find the archetype on [maven central](http://ivo2u.nl/tv) 
+
 ## Create Java EE 8 Project from mvn central repo
 
 ```bash
