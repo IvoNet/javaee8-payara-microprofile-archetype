@@ -11,7 +11,7 @@ You can find the archetype on [maven central](http://ivo2u.nl/tv)
 mvn archetype:generate \
     -DarchetypeGroupId=nl.ivonet \
     -DarchetypeArtifactId=javaee8-payara-microprofile-archetype \
-    -DarchetypeVersion=0.0.2 -U
+    -DarchetypeVersion=1.0 -U
 ```
 
 ## Install in local repo
@@ -20,7 +20,7 @@ mvn archetype:generate \
 mvn dependency:get \
    -DgroupId=nl.ivonet \
    -DartifactId=javaee8-payara-microprofile-archetype \
-   -Dversion=0.0.2
+   -Dversion=1.0
    
 mvn archetype:crawl
    
@@ -37,12 +37,12 @@ this will filter the archetype list on my groupId
 ## Create your own project in batch mode
 
 ```bash
-mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee8-payara-microprofile-archetype -DarchetypeVersion=0.0.2 -DgroupId=nl.ivonet -DartifactId=[PROJECT_NAME] -Ddocker-hub-name=[YOUR_DOCKER_HUB_NAME] -Dversion=1.0-SNAPSHOT -Darchetype.interactive=false --batch-mode
+mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee8-payara-microprofile-archetype -DarchetypeVersion=1.0 -DgroupId=nl.ivonet -DartifactId=[PROJECT_NAME] -Ddocker-hub-name=[YOUR_DOCKER_HUB_NAME] -Dversion=1.0-SNAPSHOT -Darchetype.interactive=false --batch-mode
 ```
 e.g.
 
 ```bash
-mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee8-payara-microprofile-archetype -DarchetypeVersion=0.0.2 -DgroupId=nl.ivonet -DartifactId=helloworld -Ddocker-hub-name=ivonet -Dversion=1.0-SNAPSHOT -Darchetype.interactive=false --batch-mode
+mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee8-payara-microprofile-archetype -DarchetypeVersion=1.0 -DgroupId=nl.ivonet -DartifactId=helloworld -Ddocker-hub-name=ivonet -Dversion=1.0-SNAPSHOT -Darchetype.interactive=false --batch-mode
 ```
 
 
