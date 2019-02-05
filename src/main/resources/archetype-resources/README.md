@@ -1,23 +1,25 @@
 # ${artifactId}
 
-TODO Description of the project here
+Your description here
 
-# Build
+# Project information
 
-See the `buildAndDeploy.sh` script
+The project starts out with a fully configured minimal JavaEE 8 setup and HelloWorld endpoint
 
-## Run locally
+# Project Commands 
 
-See `run.sh`. It explains how you can run locally without constantly having to rebuild the whole docker image.
-You only need to rebuild the war file.
+| Command     | Description                                                                                                                                                                                                    |
+|:----------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|run          | Start docker locally and expose docker volume `/autodeploy` to directory `./artifact` so that every time `mvn package` is run locally it will automatically redeploy the application in the docker environment |
+|build        | will build the application and the docker image                                                                                                                                                                |
+|build-run    | will build the application and the docker image and run locally                                                                                                                                                |
+|build-deploy | will build the application and the docker image and deploy that image to the docker registry                                                                                                                   |
+|logs         | will show the logs if run with `build-run`                                                                                                                                                                     |
 
-### Logs
+# Extra information
 
-You can follow the logging by running `logs.sh` when you run the local version
-
-# Run and Build
-
-See the `buildAndrun.sh` script
+* The docker image is hosted as [ivonet/payara](http://ivo2u.nl/tM)
+* The docker image is maintained [here](http://ivo2u.nl/tX) 
 
 # Example endpoint
 

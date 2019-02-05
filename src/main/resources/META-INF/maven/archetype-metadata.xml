@@ -52,8 +52,9 @@
             <includes>
                 <include>README.md</include>
                 <include>Dockerfile</include>
-                <include>buildAndRun.sh</include>
-                <include>buildAndDeploy.sh</include>
+                <include>build-deploy.sh</include>
+                <include>build-run.sh</include>
+                <include>build.sh</include>
                 <include>logs.sh</include>
                 <include>run.sh</include>
             </includes>
