@@ -11,7 +11,7 @@ You can find the archetype on [maven central](http://ivo2u.nl/tv)
 mvn archetype:generate \
     -DarchetypeGroupId=nl.ivonet \
     -DarchetypeArtifactId=javaee8-payara-microprofile-archetype \
-    -DarchetypeVersion=0.0.1 -U
+    -DarchetypeVersion=0.0.2 -U
 ```
 
 ## Install in local repo
@@ -20,7 +20,7 @@ mvn archetype:generate \
 mvn dependency:get \
    -DgroupId=nl.ivonet \
    -DartifactId=javaee8-payara-microprofile-archetype \
-   -Dversion=0.0.1
+   -Dversion=0.0.2
    
 mvn archetype:crawl
    

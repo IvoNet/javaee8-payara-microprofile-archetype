@@ -16,7 +16,7 @@ The project starts out with a fully configured minimal JavaEE 8 setup and HelloW
 |build-deploy | will build the application and the docker image and deploy that image to the docker registry                                                                                                                   |
 |logs         | will show the logs if run with `build-run`                                                                                                                                                                     |
 
-# Extra information
+# Docker
 
 * The docker image is hosted as [ivonet/payara](http://ivo2u.nl/tM)
 * The docker image is maintained [here](http://ivo2u.nl/tX) 
