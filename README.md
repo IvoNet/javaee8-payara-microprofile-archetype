@@ -5,6 +5,8 @@ working with Payara 5 and MicroProfile 2.1.
 
 You can find the archetype on [maven central](http://ivo2u.nl/tv) 
 
+I've also written a blog about it on [IvoNet.nl](http://ivo2u.nl/ty)
+
 ## Create Java EE 8 Project from mvn central repo
 
 ```bash
@@ -49,3 +51,4 @@ mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee
 # Contact
 
 Twitter: @ivonet
+Blog   : https://www.ivonet.nl
