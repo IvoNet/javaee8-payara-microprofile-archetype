@@ -2,7 +2,6 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 
-
 /**
  * Restful services here
  */

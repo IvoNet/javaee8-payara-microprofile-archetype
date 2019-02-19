@@ -9,7 +9,7 @@ import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.ext.Provider;
 
 /**
- * Allows Access to calls from another origin.
+ * Manages Access to calls from another origin.
  */
 @Provider
 public class CrossOriginResourceSharingFilter implements ContainerResponseFilter {
