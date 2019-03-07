@@ -24,6 +24,7 @@ public class HealthCheckService implements HealthCheck {
         return HealthCheckResponse.named("health")
                                   .up()
                                   .withData("Author", "Ivo Woltring")
+                                  .withData("Website", "https://www.ivonet.nl")
                                   .build();
     }
 }

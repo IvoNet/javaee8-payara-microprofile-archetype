@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-#!/usr/bin/env bash
+#!/bin/sh
 
 RUNNING=$(docker inspect --format="{{ .State.Running }}" ${artifactId} 2> /dev/null)
 if [ $? -eq 1 ] || [ "$RUNNING" == "false" ]; then
@@ -24,7 +24,7 @@ if [ $? -eq 1 ] || [ "$RUNNING" == "false" ]; then
     echo "Usr: admin"
     echo "Pwd: secret"
 else
-    /usr/bin/osascript -e 'display notification "Stopping..." with title "${artifactId}"'
+    echo "Stopping... with title ${artifactId}"
     docker rm -f ${artifactId}
 fi
 

@@ -1,5 +1,5 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-#!/usr/bin/env bash
+#!/bin/sh
 docker logs ${artifactId} -f
