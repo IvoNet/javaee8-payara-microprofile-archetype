@@ -52,6 +52,10 @@ mvn archetype:generate -DarchetypeGroupId=nl.ivonet -DarchetypeArtifactId=javaee
 ```
 
 
+# Maven repo
+
+* [Maven repo](https://repo.maven.apache.org/maven2/nl/ivonet/javaee8-payara-microprofile-archetype/)
+
 # Contact
 
 Twitter: @ivonet
