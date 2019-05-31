@@ -15,7 +15,7 @@ if [ $? -eq 1 ] || [ "$RUNNING" == "false" ]; then
      -p 8181:8181 \
      -p 4848:4848 \
      -v "$(pwd)/artifact:/autodeploy" \
-     ivonet/payara:5.184
+     ivonet/payara:5.192
 
     mvn clean package
 
