@@ -15,14 +15,15 @@ if [ $? -eq 1 ] || [ "$RUNNING" == "false" ]; then
      -p 8181:8181 \
      -p 4848:4848 \
      -v "$(pwd)/artifact:/autodeploy" \
-     ivonet/payara:5.192
+     ivonet/payara:5.193
 
     mvn clean package
 
     echo "Payara 5 admin console credentials:"
-    echo "Url: https://localhost:4848"
-    echo "Usr: admin"
-    echo "Pwd: secret"
+    echo "Website      : http://localhost:8080"
+    echo "Admin console: https://localhost:4848"
+    echo "Username     : admin"
+    echo "Password     : secret"
 else
     echo "Stopping... with title ${artifactId}"
     docker rm -f ${artifactId}
